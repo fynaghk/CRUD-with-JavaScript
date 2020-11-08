@@ -1,0 +1,110 @@
+*{
+  font-family: 'Playfair Display', serif; ;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+body > table{
+  width: 80%;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+table.input{
+  box-shadow: 4px 1px 10px 1px  rgba(13, 2, 107, 0.747);
+  margin-top: 10px;
+  margin-left: 50px;
+  width: 350px;
+  font-size: 26px;
+}
+
+table.list{
+  width:1000px;
+  color: black;
+  border-style: solid;
+  font-size: 17px;
+  margin: 50px;
+}
+
+table.list th{
+  font-size: 22px;
+  height: 20px;
+  width: 40px;
+  background-color: rgba(63, 51, 172, 0.418);
+}
+
+table.list td{
+  font-size: 15px;
+  border-style: solid;
+  border-color: grey;
+}
+
+td, th {
+  text-align: center;
+  padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+  background-color: rgba(200, 220, 245, 0.89);
+}
+
+input[type=text], input[type=number] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(231, 231, 231);
+  box-sizing: border-box;
+  border: 2px solid rgba(63, 51, 172, 0.623);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+input[type=submit]{
+  font-size: 17px;
+  width: 30%;
+  background-color: rgba(200, 220, 245, 0.719);
+  color: rgba(15, 0, 148);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form div.form-action-buttons{
+  text-align: right;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: underline;
+  color: #ee0047;
+  margin-right: 4px;
+}
+
+label.validation-error{
+  color:   red;
+  margin-left: 5px;
+}
+
+.hide{
+  display:none;
+}
+
+input:focus { 
+  background-color: rgba(200, 220, 245, 0.719);
+  outline:none!important
+}
+
+.fa-edit:before {
+  content: "\f044";
+  color: purple;
+}
+
+.fa-trash-alt:before {
+  content: "\f2ed";
+  color: purple;
+}
