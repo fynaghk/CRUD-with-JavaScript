@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+      CRUD table with JavaScript
+    </title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table class="input">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Name*</label><label class="validation-error hide" id="fullNameValidationError">This section is required.</label>
+                        <input type="text" name="bookName" id="bookName">
+                    </div>
+                    <div>
+                        <label>Author</label>
+                        <input type="text" name="bookAuthor" id="bookAuthor">
+                    </div>
+                    <div>
+                        <label>Year of publication</label>
+                        <input type="text" name="bookYear" id="bookYear">
+                    </div>
+                    <div>
+                        <label>Price</label>
+                        <input type="text" name="bookPrice" id="bookPrice">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table>
+</div>
+</br></br>
+  <div >
+    <table class="list" id="bookList" >
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Year of publication</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
